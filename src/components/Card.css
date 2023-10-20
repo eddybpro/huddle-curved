@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+:root {
+  --color-brand-1: hsl(192, 100%, 9%);
+  --color-brand-2: hsl(207, 100%, 98%);
+  --color-brand-3: hsl(0, 100%, 63%);
+  --color-brand-4: hsl(195, 3%, 50%);
+
+  --color-site-1: hsl(322, 100%, 66%);
+  --color-site-2: hsl(321, 100%, 78%);
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Card {
+  text-align: center;
+  padding: 18rem 2rem;
+}
+
+.Card:first-of-type {
+  background: url("../assets/bg-section-top-mobile-1.svg"),
+    url("../assets/bg-section-bottom-mobile-1.svg"),
+    linear-gradient(
+      transparent 10rem,
+      var(--color-brand-2) 10rem 88%,
+      transparent 88%
+    );
+  background-position: top left, bottom left, center;
+  background-size: 100% 10rem, 100% 10rem, 100% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.Card:last-of-type {
+  background: url("../assets/bg-section-top-mobile-2.svg"),
+    url("../assets/bg-section-bottom-mobile-2.svg"),
+    linear-gradient(
+      transparent 10rem,
+      var(--color-brand-2) 10rem 88%,
+      transparent 88%
+    );
+  background-position: top left, bottom left, center;
+  background-size: 100% 10rem, 100% 10rem, 100% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.Card-ImgBox {
+  margin-bottom: 3rem;
+}
+
+.Card-ImgBox > img {
+  width: 100%;
+}
+
+.Card-TxtBox-Title {
+  font-size: 2.5rem;
+  color: var(--color-brand-1);
+  font-family: var(--font-heading);
+  margin-bottom: 1.5rem;
+}
+
+.Card-TxtBox-Para {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  color: var(--color-brand-1);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 410px) {
+  .Card:first-of-type {
+    background: url("../assets/bg-section-top-mobile-1.svg"),
+      url("../assets/bg-section-bottom-mobile-1.svg"),
+      linear-gradient(
+        transparent 10rem,
+        var(--color-brand-2) 10rem 92%,
+        transparent 92%
+      );
+    background-position: top left, bottom left, center;
+    background-size: 100% 10rem, 100% 10rem, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+
+  .Card:last-of-type {
+    background: url("../assets/bg-section-top-mobile-2.svg"),
+      url("../assets/bg-section-bottom-mobile-2.svg"),
+      linear-gradient(
+        transparent 10rem,
+        var(--color-brand-2) 10rem 92%,
+        transparent 92%
+      );
+    background-position: top left, bottom left, center;
+    background-size: 100% 10rem, 100% 10rem, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: left;
+    padding: 18rem 5rem;
+  }
+
+  .Card:first-of-type {
+    background: url("../assets/bg-section-top-desktop-1.svg"),
+      url("../assets/bg-section-bottom-desktop-1.svg"),
+      linear-gradient(
+        transparent 10rem,
+        var(--color-brand-2) 10rem 86%,
+        transparent 86%
+      );
+    background-position: top left, bottom left, center;
+    background-size: 100% 10rem, 100% 10rem, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+
+  .Card:first-of-type .Card-ImgBox,
+  .Card:last-of-type .Card-ImgBox {
+    grid-column: 2;
+  }
+
+  .Card:first-of-type .Card-TxtBox,
+  .Card:last-of-type .Card-TxtBox {
+    grid-column: 1;
+  }
+
+  .Card:last-of-type {
+    background: url("../assets/bg-section-top-desktop-2.svg"),
+      url("../assets/bg-section-bottom-desktop-2.svg"),
+      linear-gradient(
+        transparent 10rem,
+        var(--color-brand-2) 10rem 86%,
+        transparent 86%
+      );
+    background-position: top left, bottom left, center;
+    background-size: 100% 10rem, 100% 10rem, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Card:first-of-type {
+    background: url("../assets/bg-section-top-desktop-1.svg"),
+      url("../assets/bg-section-bottom-desktop-1.svg"),
+      linear-gradient(
+        transparent 10rem,
+        var(--color-brand-2) 10rem 90%,
+        transparent 90%
+      );
+    background-position: top left, bottom left, center;
+    background-size: 100% 10rem, 100% 10rem, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+
+  .Card:last-of-type {
+    background: url("../assets/bg-section-top-desktop-2.svg"),
+      url("../assets/bg-section-bottom-desktop-2.svg"),
+      linear-gradient(
+        transparent 10rem,
+        var(--color-brand-2) 10rem 90%,
+        transparent 90%
+      );
+    background-position: top left, bottom left, center;
+    background-size: 100% 10rem, 100% 10rem, 100% 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+}

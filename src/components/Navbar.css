@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+:root {
+  --color-brand-1: hsl(192, 100%, 9%);
+  --color-brand-2: hsl(207, 100%, 98%);
+  --color-brand-3: hsl(0, 100%, 63%);
+
+  --color-site-1: hsl(322, 100%, 66%);
+  --color-site-2: hsl(321, 100%, 78%);
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.Logo {
+  display: block;
+  width: 14rem;
+}
+
+.Logo > img {
+  width: 100%;
+}
+
+.NavBtn {
+  background-color: transparent;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--color-site-1);
+  color: var(--color-site-1);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-family: var(--font-body);
+  transition: all 0.2s ease-in-out;
+}
+
+.NavBtn:hover {
+  color: var(--color-site-2);
+  border-color: var(--color-site-2);
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    margin-bottom: 10rem;
+  }
+  .Logo {
+    width: 18rem;
+  }
+}

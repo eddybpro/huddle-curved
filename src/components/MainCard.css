@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+:root {
+  --color-brand-1: hsl(192, 100%, 9%);
+  --color-brand-2: hsl(207, 100%, 98%);
+  --color-brand-3: hsl(0, 100%, 63%);
+  --color-brand-4: hsl(195, 3%, 50%);
+
+  --color-site-1: hsl(322, 100%, 66%);
+  --color-site-2: hsl(321, 100%, 78%);
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  padding: 5rem 0;
+}
+
+.FirstBox {
+  padding: 3rem 2rem;
+}
+
+.FirstBox-ImgBox {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.FirstBox-ImgBox > img {
+  width: 100%;
+}
+
+.FirstBox-Container {
+  display: grid;
+  place-content: center;
+}
+
+.FirstBox-Container > div {
+  text-align: left;
+  margin-bottom: 6rem;
+}
+
+.FirstBox-Container-Img {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 4rem;
+}
+
+.FirstBox-Container-Title {
+  font-size: 4.5rem;
+  color: var(--color-brand-1);
+  font-family: var(--font-heading);
+}
+
+.FirstBox-Container-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-4);
+  font-weight: 600;
+  font-family: var(--font-body);
+  text-transform: capitalize;
+}
+
+.CardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 6rem 0;
+}
+
+.CommunityBox {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.CommunityBox-Title {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  font-family: var(--font-body);
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.CommunityBox-Btn {
+  background-color: var(--color-site-1);
+  color: var(--color-brand-2);
+  font-size: 1.6rem;
+  font-family: var(--font-body);
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.CommunityBox-Btn:hover {
+  background-color: var(--color-site-2);
+}
+
+@media screen and (min-width: 768px) {
+  .FirstBox {
+    padding: 3rem 5rem;
+  }
+
+  .FirstBox-ImgBox {
+    max-width: 80%;
+    margin: 0 auto 3rem;
+  }
+
+  .FirstBox-Container {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 0;
+    margin: auto;
+  }
+
+  .CommunityBox {
+    padding: 6rem 5rem;
+  }
+
+  .CommunityBox-Title {
+    font-size: 4.5rem;
+  }
+}
